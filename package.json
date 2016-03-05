@@ -1,0 +1,19 @@
+{
+  "name": "venture",
+  "version": "1.0.0",
+  "description": "Qucikly make group decisions for outings with friends!",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmin.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruth544/venture-server.git"
+  },
+  "author": "Venture",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruth544/venture-server/issues"
+  },
+  "homepage": "https://github.com/cruth544/venture-server#readme"
+}
