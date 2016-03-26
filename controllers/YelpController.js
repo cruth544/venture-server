@@ -12,6 +12,7 @@ module.exports = {
 
     var searchParams = {
       term: req.body.term,
+      category: req.body.category,
       location: req.body.location,
       limit: req.body.limit,
       offset: '0',
