@@ -8,7 +8,6 @@ var cors          = require('cors')
 var Promise       = require('bluebird')
 var path          = require('path')
 var logger        = require('morgan')
-var cookieParser  = require('cookie-parser')
 var bodyParser    = require('body-parser')
 
 app.use(cors())
@@ -20,10 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true}))
-app.use(cookieParser())
 app.use('/public', express.static('public'));
-
-app.use( require('cookie-parser')(credentials.cookieSecret))
 
 var routes = require('./config/routes')
 app.use('/api', routes)

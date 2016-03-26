@@ -18,14 +18,15 @@ module.exports = {
       sort: '0'
     }
 
-    yelp.search(searchParams)
-      .then(function (data) {
-        var ventures = {}
+    // yelp.search(searchParams)
+    //   .then(function (data) {
+    //     var ventures = {}
 
 
-        res.json(ventures)
-      }, function (err) {
-        console.log(err)
-      })
+    //     res.json(ventures)
+    //   }, function (err) {
+    //     console.log(err)
+    //   })
+    res.json({success: true})
   }
 }
