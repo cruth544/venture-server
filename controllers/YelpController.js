@@ -18,6 +18,8 @@ module.exports = {
       sort: '0'
     }
 
+    console.log(searchParams)
+
     // yelp.search(searchParams)
     //   .then(function (data) {
     //     var ventures = {}
