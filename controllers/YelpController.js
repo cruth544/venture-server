@@ -10,7 +10,7 @@ module.exports = {
       token_secret: process.env.YELP_TOKEN_SECRET
     })
     console.log("Req: ", req.body)
-    var body = JSON.parse(req.body)
+    var body = JSON.parse(Object.keys(req.body)[0])
     console.log("Body: ", body)
     var searchParams = {
       term: req.body.term,
