@@ -9,7 +9,9 @@ module.exports = {
       token: process.env.YELP_TOKEN_KEY,
       token_secret: process.env.YELP_TOKEN_SECRET
     })
-
+    console.log("Req: ", req.body)
+    var body = JSON.parse(req.body)
+    console.log("Body: ", body)
     var searchParams = {
       term: req.body.term,
       category: req.body.category,
@@ -19,7 +21,7 @@ module.exports = {
       sort: '0'
     }
 
-    console.log(searchParams)
+    console.log("Search params: ", searchParams)
 
     // yelp.search(searchParams)
     //   .then(function (data) {
