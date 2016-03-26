@@ -19,11 +19,11 @@ module.exports = {
       sort: '0'
     }
 
-    console.log("Search params: ", searchParams)
+    console.log("Search params: ", searchParams, '\n', process.env)
 
     yelp.search(searchParams)
       .then(function (data) {
-        var ventures = {}
+        var ventures = {testing: true}
         console.log("Yelp Data: ", data)
 
 
