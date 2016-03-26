@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cruth544/venture-server#readme",
   "dependencies": {
-    "firebase": "^2.4.1"
+    "firebase": "^2.4.1",
+    "yelp": "^1.0.1"
   }
 }
